@@ -48,15 +48,12 @@ for v in variants:
 from dnasim.analysis import plot_mutation_patterns
 plot_mutation_patterns(gene, variants, "mutations.png")
 ```
-![Mutation Pattern Example](https://raw.githubusercontent.com/yourusername/dna-sim/main/docs/mutations-example.png)
 
 ### 4. Sequence Quality Report
 ```python
 from dnasim.reports import generate_quality_report
 # Generates a text report and GC content plot
 generate_quality_report(gene, "quality_report.txt")
-```
-![GC Content Example](https://raw.githubusercontent.com/yourusername/dna-sim/main/docs/gc-distribution.png)
 
 
 ## 🖥️ Command-Line Interface
