@@ -133,12 +133,3 @@ python -m dnasim.cli ATGCGT... --rate 0.01 --variants 3 --visualize --output mut
 
 ## 📄 License
 MIT License
-
----
-
-## 📚 Learn More
-- [Mutation models in human genome](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1183536/)
-- [TP53 gene reference](https://www.ncbi.nlm.nih.gov/gene/7157)
-- [Python for bioinformatics](https://biopython.org/)
-
----
