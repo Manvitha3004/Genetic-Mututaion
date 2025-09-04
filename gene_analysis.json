@@ -1,0 +1,284 @@
+[
+  {
+    "variant": 1,
+    "position": 22,
+    "original": "A",
+    "mutated": "G"
+  },
+  {
+    "variant": 1,
+    "position": 87,
+    "original": "T",
+    "mutated": "G"
+  },
+  {
+    "variant": 1,
+    "position": 108,
+    "original": "G",
+    "mutated": "C"
+  },
+  {
+    "variant": 1,
+    "position": 114,
+    "original": "T",
+    "mutated": "A"
+  },
+  {
+    "variant": 1,
+    "position": 123,
+    "original": "G",
+    "mutated": "T"
+  },
+  {
+    "variant": 1,
+    "position": 132,
+    "original": "G",
+    "mutated": "C"
+  },
+  {
+    "variant": 1,
+    "position": 139,
+    "original": "T",
+    "mutated": "A"
+  },
+  {
+    "variant": 1,
+    "position": 225,
+    "original": "T",
+    "mutated": "G"
+  },
+  {
+    "variant": 1,
+    "position": 230,
+    "original": "G",
+    "mutated": "T"
+  },
+  {
+    "variant": 1,
+    "position": 233,
+    "original": "A",
+    "mutated": "C"
+  },
+  {
+    "variant": 1,
+    "position": 239,
+    "original": "G",
+    "mutated": "C"
+  },
+  {
+    "variant": 1,
+    "position": 248,
+    "original": "G",
+    "mutated": "T"
+  },
+  {
+    "variant": 1,
+    "position": 275,
+    "original": "A",
+    "mutated": "T"
+  },
+  {
+    "variant": 2,
+    "position": 5,
+    "original": "T",
+    "mutated": "C"
+  },
+  {
+    "variant": 2,
+    "position": 27,
+    "original": "C",
+    "mutated": "A"
+  },
+  {
+    "variant": 2,
+    "position": 31,
+    "original": "T",
+    "mutated": "A"
+  },
+  {
+    "variant": 2,
+    "position": 42,
+    "original": "G",
+    "mutated": "T"
+  },
+  {
+    "variant": 2,
+    "position": 48,
+    "original": "C",
+    "mutated": "T"
+  },
+  {
+    "variant": 2,
+    "position": 54,
+    "original": "C",
+    "mutated": "T"
+  },
+  {
+    "variant": 2,
+    "position": 61,
+    "original": "T",
+    "mutated": "C"
+  },
+  {
+    "variant": 2,
+    "position": 62,
+    "original": "T",
+    "mutated": "C"
+  },
+  {
+    "variant": 2,
+    "position": 63,
+    "original": "C",
+    "mutated": "G"
+  },
+  {
+    "variant": 2,
+    "position": 84,
+    "original": "C",
+    "mutated": "G"
+  },
+  {
+    "variant": 2,
+    "position": 85,
+    "original": "C",
+    "mutated": "T"
+  },
+  {
+    "variant": 2,
+    "position": 91,
+    "original": "A",
+    "mutated": "T"
+  },
+  {
+    "variant": 2,
+    "position": 96,
+    "original": "C",
+    "mutated": "T"
+  },
+  {
+    "variant": 2,
+    "position": 100,
+    "original": "A",
+    "mutated": "T"
+  },
+  {
+    "variant": 2,
+    "position": 165,
+    "original": "C",
+    "mutated": "A"
+  },
+  {
+    "variant": 2,
+    "position": 176,
+    "original": "C",
+    "mutated": "T"
+  },
+  {
+    "variant": 2,
+    "position": 192,
+    "original": "C",
+    "mutated": "A"
+  },
+  {
+    "variant": 2,
+    "position": 194,
+    "original": "T",
+    "mutated": "A"
+  },
+  {
+    "variant": 2,
+    "position": 218,
+    "original": "A",
+    "mutated": "T"
+  },
+  {
+    "variant": 2,
+    "position": 228,
+    "original": "G",
+    "mutated": "C"
+  },
+  {
+    "variant": 2,
+    "position": 230,
+    "original": "G",
+    "mutated": "T"
+  },
+  {
+    "variant": 2,
+    "position": 270,
+    "original": "G",
+    "mutated": "C"
+  },
+  {
+    "variant": 3,
+    "position": 6,
+    "original": "T",
+    "mutated": "A"
+  },
+  {
+    "variant": 3,
+    "position": 12,
+    "original": "C",
+    "mutated": "G"
+  },
+  {
+    "variant": 3,
+    "position": 90,
+    "original": "C",
+    "mutated": "A"
+  },
+  {
+    "variant": 3,
+    "position": 111,
+    "original": "C",
+    "mutated": "A"
+  },
+  {
+    "variant": 3,
+    "position": 124,
+    "original": "C",
+    "mutated": "A"
+  },
+  {
+    "variant": 3,
+    "position": 139,
+    "original": "T",
+    "mutated": "A"
+  },
+  {
+    "variant": 3,
+    "position": 163,
+    "original": "T",
+    "mutated": "A"
+  },
+  {
+    "variant": 3,
+    "position": 194,
+    "original": "T",
+    "mutated": "A"
+  },
+  {
+    "variant": 3,
+    "position": 208,
+    "original": "A",
+    "mutated": "T"
+  },
+  {
+    "variant": 3,
+    "position": 231,
+    "original": "A",
+    "mutated": "C"
+  },
+  {
+    "variant": 3,
+    "position": 270,
+    "original": "G",
+    "mutated": "C"
+  },
+  {
+    "variant": 3,
+    "position": 285,
+    "original": "T",
+    "mutated": "C"
+  }
+]

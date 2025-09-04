@@ -1,0 +1,55 @@
+"""Real DNA sequence generator."""
+from typing import Dict, List
+
+# Common biological motifs and sequences
+PROMOTER_SEQUENCES = {
+    'TP53': 'GGCGCGTAAAACGTGAAACCGCGCGCGCGCGCCAATATTCTGCAGACTTGGCGGGGTACCGCGTCCGCGG',
+    'Insulin': 'CCGGGGGCGCGGCCGCGCGGCGCGAGATTTCCGCGGCGCGCGATCCTCGCCTCTGCAGCCAGCCGC',
+    'Hemoglobin': 'TATAAAAGGGGGTTTTTCCCGCCTCGAGTTCGGGGCGGGGCGGGGCAGGGGTGTCCTTGGTGC'
+}
+
+CODING_SEQUENCES = {
+    'P53': 'ATGGAGGAGCCGCAGTCAGATCCTAGCGTCGAGCCCCCTCTGAGTCAGGAAACATTTTCAGACCTATGGAAACTACTTCCTGAAAACAACGTTCTGTCCCCCTTGCCGTCCCAAGCAATGGATGATTTGATGCTGTCCCCGGACGATATTGAACAATGGTTCACTGAAGACCCAGGTCCAGATGAAGCTCCCAGAATGCCAGAGGCTGCTCCCCCCGTGGCCCCTGCACCAGCAGCTCCTACACCGGCGGCCCCTGCACCAGCCCCCTCCTGGCCCCTGTCATCTTCT',
+    'Insulin': 'ATGGCCCTGTGGATGCGCCTCCTGCCCCTGCTGGCGCTGCTGGCCCTCTGGGGACCTGACCCAGCCGCAGCCTTTGTGAACCAACACCTGTGCGGCTCACACCTGGTGGAAGCTCTCTACCTAGTGTGCGGGGAACGAGGCTTCTTCTACACACCCAAGACCCGCCGGGAGGCAGAGGACCTGCAGGTGGGGCAGGTGGAGCTGGGCGGGGGCCCTGGTGCAGGCAGCCTGCAGCCCTTGGCCCTGGAGGGGTCCCTGCAGAAGCGTGGCATTGTGGAACAATGCTGTACCAGCATCTGCTCCCTCTACCAGCTGGAGAACTACTGCAACT',
+    'Hemoglobin': 'ATGGTGCTGTCTCCTGCCGACAAGACCAACGTCAAGGCCGCCTGGGGTAAGGTCGGCGCGCACGCTGGCGAGTATGGTGCGGAGGCCCTGGAGAGGATGTTCCTGTCCTTCCCCACCACCAAGACCTACTTCCCGCACTTCGACCTGAGCCACGGCTCTGCCCAGGTTAAGGGCCACGGCAAGAAGGTGGCCGACGCGCTGACCAACGCCGTGGCGCACGTGGACGACATGCCCAACGCGCTGTCCGCCCTGAGCGACCTGCACGCGCACAAGCTTCGGGTGGACCCGGTCAACTTCAAGCTCCTAAGCCACTGCCTGCTGGTGACCCTGGCCG'
+}
+
+REGULATORY_ELEMENTS = {
+    'TATA_box': 'TATAAA',
+    'Kozak': 'GCCACC',
+    'PolyA': 'AATAAA'
+}
+
+def generate_promoter_region(gene_name: str = 'P53') -> str:
+    """Generate a promoter region using real sequences."""
+    return PROMOTER_SEQUENCES.get(gene_name, PROMOTER_SEQUENCES['TP53'])
+
+def generate_coding_sequence(gene_name: str = 'P53') -> str:
+    """Get real coding sequence for a specific gene."""
+    return CODING_SEQUENCES.get(gene_name, CODING_SEQUENCES['P53'])
+
+def generate_regulatory_sequence() -> str:
+    """Generate regulatory sequence with real motifs."""
+    return REGULATORY_ELEMENTS['TATA_box'] + REGULATORY_ELEMENTS['PolyA']
+
+def generate_gene(gene_name: str = 'P53', with_regulatory: bool = True) -> str:
+    """Generate a complete gene structure using real sequences.
+    
+    Args:
+        gene_name: Name of the gene ('P53', 'Insulin', or 'Hemoglobin')
+        with_regulatory: Include regulatory elements
+        
+    Returns:
+        Complete gene sequence
+    """
+    sequence = []
+    
+    if with_regulatory:
+        sequence.append(generate_promoter_region(gene_name))
+    
+    sequence.append(generate_coding_sequence(gene_name))
+    
+    if with_regulatory:
+        sequence.append(generate_regulatory_sequence())
+    
+    return ''.join(sequence)
