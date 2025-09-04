@@ -17,7 +17,7 @@ A Python package for simulating DNA mutations using real gene sequences and empi
 
 Clone the repository and install dependencies:
 ```bash
-(https://github.com/Manvitha3004/DNA.git)
+[https://github.com/Manvitha3004/DNA.git]
 cd dna-sim
 pip install -r requirements.txt
 ```
