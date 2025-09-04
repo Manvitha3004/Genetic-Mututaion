@@ -4,7 +4,6 @@
 
 A Python package for simulating DNA mutations using real gene sequences and empirical mutation models. Designed for bioinformatics, genomics, and educational use.
 
----
 
 ## 🚀 Features
 - Real human gene sequences (TP53, Insulin, Hemoglobin)
@@ -14,7 +13,6 @@ A Python package for simulating DNA mutations using real gene sequences and empi
 - Command-line interface and batch processing
 - No random/synthetic data—only real biological logic
 
----
 
 ## 🛠️ Installation
 
@@ -25,7 +23,6 @@ cd dna-sim
 pip install -r requirements.txt
 ```
 
----
 
 ## 🧬 Step-by-Step Usage
 
@@ -61,7 +58,6 @@ generate_quality_report(gene, "quality_report.txt")
 ```
 ![GC Content Example](https://raw.githubusercontent.com/yourusername/dna-sim/main/docs/gc-distribution.png)
 
----
 
 ## 🖥️ Command-Line Interface
 
@@ -69,7 +65,6 @@ generate_quality_report(gene, "quality_report.txt")
 python -m dnasim.cli ATGCGT... --rate 0.01 --variants 3 --visualize --output mutations.png
 ```
 
----
 
 ## 🏁 Final Setup & Usage Checklist
 
@@ -106,13 +101,11 @@ python -m dnasim.cli ATGCGT... --rate 0.01 --variants 3 --visualize --output mut
 - All mutation logic is based on real biological models—no random/synthetic data.
 - The package is modular: you can use only the parts you need (mutation, analysis, reporting).
 
----
 
 ## 🆘 Need Help?
 - If you encounter errors, check your Python version and dependencies.
 - For issues, open a GitHub issue or contact the maintainer.
 
----
 
 ## 🧪 Example Output
 
@@ -121,7 +114,6 @@ python -m dnasim.cli ATGCGT... --rate 0.01 --variants 3 --visualize --output mut
 - Sequence quality reports
 - GC content distribution plots
 
----
 
 ## 🤝 Contributing
 1. Fork the repo
@@ -129,7 +121,6 @@ python -m dnasim.cli ATGCGT... --rate 0.01 --variants 3 --visualize --output mut
 3. Commit your changes
 4. Push and open a Pull Request
 
----
 
 ## 📄 License
 MIT License
