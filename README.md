@@ -1,110 +1,144 @@
-# DNA Mutation Simulator (dna-sim)
+# dna-sim: Realistic DNA Mutation Simulator
 
-A Python package for simulating DNA mutations using real biological sequences and mutation patterns.
+![dna-sim logo](https://raw.githubusercontent.com/yourusername/dna-sim/main/docs/dna-sim-logo.png)
 
-## Features
+A Python package for simulating DNA mutations using real gene sequences and empirical mutation models. Designed for bioinformatics, genomics, and educational use.
 
-- Real gene sequences (P53, Insulin, Hemoglobin)
-- Biologically accurate mutation patterns (transitions/transversions)
-- Complete gene structure simulation (promoters, coding sequences, regulatory elements)
-- Mutation analysis and visualization
-- Command-line interface
-- Batch processing support
+---
 
-## Installation
+## 🚀 Features
+- Real human gene sequences (TP53, Insulin, Hemoglobin)
+- Biologically accurate mutation models (transitions, transversions, CpG context)
+- Mutation pattern analysis and visualization
+- Sequence quality reporting
+- Command-line interface and batch processing
+- No random/synthetic data—only real biological logic
 
+---
+
+## 🛠️ Installation
+
+Clone the repository and install dependencies:
 ```bash
-pip install dna-sim
+git clone https://github.com/yourusername/dna-sim.git
+cd dna-sim
+pip install -r requirements.txt
 ```
 
-## Quick Start
+---
 
+## 🧬 Step-by-Step Usage
+
+### 1. Generate a Real Gene Sequence
+```python
+from dnasim.generator import generate_gene
+# Get TP53 gene with regulatory elements
+gene = generate_gene(gene_name='P53', with_regulatory=True)
+print(gene)
+```
+
+### 2. Simulate Mutations
 ```python
 from dnasim import mutate
-from dnasim.generator import generate_gene
-
-# Get a real gene sequence (P53, Insulin, or Hemoglobin)
-sequence = generate_gene(gene_name='P53')
-
-# Generate mutations
-variants = mutate(sequence, rate=0.01, n_variants=3)
+# Generate 3 variants with 1% mutation rate
+variants = mutate(gene, rate=0.01, n_variants=3)
+for v in variants:
+    print(v)
 ```
 
-## Step-by-Step Usage
+### 3. Analyze and Visualize Mutations
+```python
+from dnasim.analysis import plot_mutation_patterns
+plot_mutation_patterns(gene, variants, "mutations.png")
+```
+![Mutation Pattern Example](https://raw.githubusercontent.com/yourusername/dna-sim/main/docs/mutations-example.png)
 
-1. **Generate a Gene Sequence**
-   ```python
-   from dnasim.generator import generate_gene
-   
-   # Get P53 gene with regulatory elements
-   gene = generate_gene(gene_name='P53', with_regulatory=True)
-   ```
+### 4. Sequence Quality Report
+```python
+from dnasim.reports import generate_quality_report
+# Generates a text report and GC content plot
+generate_quality_report(gene, "quality_report.txt")
+```
+![GC Content Example](https://raw.githubusercontent.com/yourusername/dna-sim/main/docs/gc-distribution.png)
 
-2. **Create Mutations**
-   ```python
-   from dnasim import mutate
-   
-   # Generate 3 variants with 1% mutation rate
-   variants = mutate(gene, rate=0.01, n_variants=3)
-   ```
+---
 
-3. **Analyze Mutations**
-   ```python
-   from dnasim.analysis import plot_mutation_patterns
-   
-   # Visualize mutation patterns
-   plot_mutation_patterns(gene, variants, "mutations.png")
-   ```
-
-## Command Line Usage
+## 🖥️ Command-Line Interface
 
 ```bash
-python -m dnasim.cli ATGC --rate 0.01 --variants 3 --visualize
+python -m dnasim.cli ATGCGT... --rate 0.01 --variants 3 --visualize --output mutations.png
 ```
 
-## Available Genes
+---
 
-- P53 (Tumor suppressor)
-- Insulin (Metabolic regulation)
-- Hemoglobin (Oxygen transport)
+## 🏁 Final Setup & Usage Checklist
 
-## Advanced Features
+1. **Install Python 3.8+**
+   ```bash
+   python --version
+   ```
+2. **Install All Requirements**
+   ```bash
+   pip install -r requirements.txt
+   pip install -r requirements-dev.txt  # For development/publishing
+   ```
+3. **Run Example Scripts**
+   ```bash
+   python examples/real_sequences.py
+   python examples/quality_analysis.py
+   python examples/batch_processing.py
+   ```
+4. **View Outputs**
+   - Mutation visualizations: `mutations.png`, `gene_mutations.png`
+   - Quality reports: `quality_report.txt`, `gc_distribution.png`
+   - Mutated sequences: printed in terminal and saved as needed
+5. **Use the CLI**
+   ```bash
+   python -m dnasim.cli ATGCGT... --rate 0.01 --variants 3 --visualize --output mutations.png
+   ```
+6. **Explore and Customize**
+   - Add your own gene sequences to `dnasim/sequences.py`
+   - Tweak mutation rates and batch sizes in scripts
 
-### Batch Processing
-```python
-from dnasim.cli import process_batch
 
-variants = process_batch(sequence, rate=0.01, n_variants=3)
-```
+## 💡 Pro Tips
+- For large datasets, use batch processing and export features.
+- All mutation logic is based on real biological models—no random/synthetic data.
+- The package is modular: you can use only the parts you need (mutation, analysis, reporting).
 
-### Export Results
-```python
-from dnasim.export import export_mutations
+---
 
-export_mutations(sequence, variants, "mutations.csv")
-```
+## 🆘 Need Help?
+- If you encounter errors, check your Python version and dependencies.
+- For issues, open a GitHub issue or contact the maintainer.
 
-## API Reference
+---
 
-### `mutate(sequence: str, rate: float = 0.01, n_variants: int = 1)`
-Generate mutations in DNA sequence.
-- `sequence`: Input DNA sequence
-- `rate`: Mutation rate (default: 0.01)
-- `n_variants`: Number of variants (default: 1)
+## 🧪 Example Output
 
-### `generate_gene(gene_name: str = 'P53', with_regulatory: bool = True)`
-Generate complete gene sequence.
-- `gene_name`: 'P53', 'Insulin', or 'Hemoglobin'
-- `with_regulatory`: Include regulatory elements
+- Mutated gene sequences
+- Mutation pattern visualizations
+- Sequence quality reports
+- GC content distribution plots
 
-## Contributing
+---
 
-1. Fork the repository
+## 🤝 Contributing
+1. Fork the repo
 2. Create your feature branch
 3. Commit your changes
-4. Push to the branch
-5. Create a Pull Request
+4. Push and open a Pull Request
 
-## License
+---
 
+## 📄 License
 MIT License
+
+---
+
+## 📚 Learn More
+- [Mutation models in human genome](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC1183536/)
+- [TP53 gene reference](https://www.ncbi.nlm.nih.gov/gene/7157)
+- [Python for bioinformatics](https://biopython.org/)
+
+---
