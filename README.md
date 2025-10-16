@@ -1,4 +1,4 @@
-# dna-sim: Realistic DNA Mutation Simulator
+# Genetic Mutation: Realistic DNA Mutation Simulator
 
 
 A Python package for simulating DNA mutations using real gene sequences and empirical mutation models. Designed for bioinformatics, genomics, and educational use.
