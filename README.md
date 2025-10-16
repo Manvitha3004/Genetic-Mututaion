@@ -98,12 +98,12 @@ python -m dnasim.cli ATGCGT... --rate 0.01 --variants 3 --visualize --output mut
 - The package is modular: you can use only the parts you need (mutation, analysis, reporting).
 
 
-## 🆘 Need Help?
+## Need Help?
 - If you encounter errors, check your Python version and dependencies.
 - For issues, open a GitHub issue or contact the maintainer.
 
 
-## 🧪 Example Output
+## Example Output
 
 - Mutated gene sequences
 - Mutation pattern visualizations
